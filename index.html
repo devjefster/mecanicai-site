@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>MecanicAI – Your Smart Garage Assistant</title>
+
+    <meta name="description" content="MecanicAI is an AI-powered assistant designed for car mechanics and enthusiasts to find fast, accurate answers to vehicle repair problems." />
+    <meta name="keywords" content="automotive AI, car repair assistant, mechanic help, auto diagnostics, MecanicAI, smart garage" />
+    <meta name="author" content="MecanicAI Team" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.mecanicai.com/" />
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="MecanicAI – Your Smart Garage Assistant" />
+    <meta property="og:description" content="Ask questions. Get car repair answers. Powered by AI and real repair data." />
+    <meta property="og:image" content="https://www.mecanicai.com/images/logo-full.png" />
+    <meta property="og:url" content="https://www.mecanicai.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@mecanicai.app" />
+    <meta name="twitter:title" content="MecanicAI – Your Smart Garage Assistant" />
+    <meta name="twitter:description" content="AI for auto repair. Like ChatGPT, but for your garage." />
+    <meta name="twitter:image" content="https://www.mecanicai.com/images/logo-full.png" />
+
+    <!-- Favicon, Fonts, Styles -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;700&display=swap"
+          rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" crossorigin href="/assets/index-CJCw9cMH.css">
+</head>
+
+<body>
+
+<header class="nav">
+    <div class="container">
+        <img src="/images/logo-icon.png" alt="MecanicAi" class="logo-icon"/>
+        <h1 class="brand">Mecanic<span class="ai">Ai</span></h1>
+    </div>
+</header>
+
+<main class="hero fade-in">
+    <img src="/images/logo-full2.png" alt="MecanicAI logo showing wrench and gear" class="hero-logo"/>
+    <h2 id="slogan" aria-live="polite"></h2>
+
+    <p id="main-text" class="lead"></p>
+
+    <div class="coming-soon">
+        <h3 id="coming-title">🚗 Coming Soon</h3>
+        <p id="coming-desc">
+            MecanicAI is an intelligent assistant built to help mechanics and car enthusiasts find answers fast.
+            Powered by advanced AI and real repair manuals, it's like ChatGPT — but for your garage.
+        </p>
+        <p id="coming-note" class="text-muted"><em>We’re fine-tuning the engine. Stay tuned!</em></p>
+    </div>
+
+    <a href="https://www.instagram.com/mecanicai.app" class="cta" id="cta-btn" target="_blank">Follow Us for Updates</a>
+</main>
+
+
+<footer class="container">
+    <div class="footer-content">
+        <p>© 2025 MecanicAI – <span id="slogan-footer" aria-live="polite"></span></p>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/mecanicai.app" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@mecanicai.app" target="_blank" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://twitter.com/mecanicai.app" target="_blank" aria-label="Twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="mailto:mecanicai.platform@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<script>
+    const lang = (navigator.languages && navigator.languages[0]) || navigator.language;
+    const isPT = lang.toLowerCase().startsWith('pt');
+
+    document.getElementById('slogan').textContent = isPT
+        ? 'Seu assistente inteligente de oficina.'
+        : 'Your Smart Garage Assistant.';
+
+    document.getElementById('main-text').textContent = isPT
+        ? 'Faça perguntas. Obtenha respostas para reparos de automóveis. Desenvolvido com inteligência artificial e dados reais de reparos.'
+        : 'Ask questions. Get car repair answers. Powered by artificial intelligence and real repair data.';
+
+    document.getElementById('coming-title').textContent = isPT
+        ? '🚗 Em breve'
+        : '🚗 Coming Soon';
+
+    document.getElementById('coming-desc').textContent = isPT
+        ? 'O MecanicAI é um assistente inteligente projetado para ajudar mecânicos e entusiastas a encontrar respostas rapidamente. Alimentado por IA avançada e manuais reais de reparo, é como um ChatGPT para sua oficina.'
+        : 'MecanicAI is an intelligent assistant built to help mechanics and car enthusiasts find answers fast. Powered by advanced AI and real repair manuals, it\'s like ChatGPT — but for your garage.';
+
+    document.getElementById('coming-note').textContent = isPT
+        ? 'Estamos ajustando os últimos detalhes. Fique ligado!'
+        : 'We’re fine-tuning the engine. Stay tuned!';
+
+    document.getElementById('cta-btn').textContent = isPT
+        ? 'Siga-nos para atualizações'
+        : 'Follow Us for Updates';
+
+    document.getElementById('slogan-footer').textContent = isPT
+        ? 'Seu assistente inteligente de oficina.'
+        : 'Your Smart Garage Assistant.';
+</script>
+
