@@ -1,10 +1,19 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-    root: '.', // default
-    publicDir: 'assets', // optional; Vite handles static by default
+    root: '.',
+    base: './',
+    publicDir: 'assets',
     build: {
         outDir: 'dist',
-        emptyOutDir: true
+        emptyOutDir: true,
+        assetsInlineLimit: 0,
+        rollupOptions: {
+            output: {
+                assetFileNames: 'assets/[name].[ext]',
+                chunkFileNames: 'assets/js/[name]-[hash].js',
+                entryFileNames: 'assets/js/[name]-[hash].js',
+            }
+        }
     }
 });
